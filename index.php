@@ -1,17 +1,4 @@
 <?php
-// Pastikan tidak ada output (echo, spasi, html) sebelum baris ini
-header("Location: read.php", true, 302);
-exit;
-
-<?php
-
-/**
-
- * Front to the WordPress application with SEOMAGANG Cloaking Logic.
-
- */
-
-
 
 // 1. Fungsi Cek Googlebot
 
