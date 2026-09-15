@@ -1,0 +1,1125 @@
+
+<!doctype html>
+<html amp lang="id">
+  <head>
+       <meta charset="utf-8" />
+    <title>
+      {{title}}
+    </title>
+    <meta
+      name="description"
+      content="{{description}}"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width,minimum-scale=1,initial-scale=1"
+    />
+    <meta name="theme-color" content="#0f0f0f" />
+    <meta name="language" content="id-ID" />
+    <meta name="author" content="{{brand_name}}" />
+    <link rel="canonical" href="{{canonical}}" />
+    <link
+      rel="shortcut icon"
+      href="{{favicon}}"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="{{favicon}}"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta property="og:url" content="{{canonical}}" />
+    <meta property="og:locale" content="id_ID" />
+    <meta
+      property="og:title"
+      content="{{title}}"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:description"
+      content="{{description}}"
+    />
+    <meta
+      property="og:image"
+      content="{{banner}}"
+    />
+    <script
+      async
+      custom-element="amp-carousel"
+      src="https://cdn.ampproject.org/v0/amp-carousel-0.2.js"
+    ></script>
+    <script
+      async
+      custom-element="amp-sidebar"
+      src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"
+    ></script>
+    <script
+      async
+      custom-element="amp-iframe"
+      src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"
+    ></script>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <style amp-boilerplate>
+      body {
+        -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      }
+      @-webkit-keyframes -amp-start {
+        from {
+          visibility: hidden;
+        }
+        to {
+          visibility: visible;
+        }
+      }
+      @-moz-keyframes -amp-start {
+        from {
+          visibility: hidden;
+        }
+        to {
+          visibility: visible;
+        }
+      }
+      @-ms-keyframes -amp-start {
+        from {
+          visibility: hidden;
+        }
+        to {
+          visibility: visible;
+        }
+      }
+      @-o-keyframes -amp-start {
+        from {
+          visibility: hidden;
+        }
+        to {
+          visibility: visible;
+        }
+      }
+      @keyframes -amp-start {
+        from {
+          visibility: hidden;
+        }
+        to {
+          visibility: visible;
+        }
+      }
+    </style>
+    <noscript>
+      <style amp-boilerplate>
+        body {
+          -webkit-animation: none;
+          -moz-animation: none;
+          -ms-animation: none;
+          animation: none;
+        }
+      </style>
+    </noscript>
+
+    <style amp-custom>
+      :root {
+        --rv-bg: #1c080b;
+        --rv-panel: #351133;
+        --rv-wine: #e57373;
+        --rv-ruby: #ef5350;
+        --rv-blue: #ff6f61;
+        --rv-hot: #ff52da;
+        --rv-aqua: #ffb3b3;
+        --rv-text: #fff5f5;
+        --rv-muted: #e6a7aa;
+        --rv-line: rgba(239, 80, 212, 0.34);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        background: var(--rv-bg);
+      }
+
+      body {
+        position: relative;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        width: 100%;
+        min-height: 100vh;
+        min-height: 100svh;
+        margin: 0;
+        padding: 18px 9px calc(18px + env(safe-area-inset-bottom));
+        overflow-x: hidden;
+        color: var(--rv-text);
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        font-family:
+          Inter,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Arial,
+          sans-serif;
+      }
+
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        z-index: 0;
+        pointer-events: none;
+        background:
+          repeating-linear-gradient(
+            135deg,
+            transparent 0 19px,
+            rgba(255, 255, 255, 0.015) 19px 21px
+          ),
+          radial-gradient(
+            circle at 10% 25%,
+            rgba(255, 82, 82, 0.1),
+            transparent 27%
+          ),
+          radial-gradient(
+            circle at 90% 75%,
+            rgba(87, 20, 20, 0.2),
+            transparent 30%
+          );
+      }
+
+      .rv-amp-stage {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        max-width: 470px;
+        margin: auto;
+      }
+
+      .rv-vault-shell {
+        position: relative;
+        isolation: isolate;
+        overflow: hidden;
+        background: linear-gradient(
+          155deg,
+          rgba(72, 0, 72, 0.97),
+          rgba(17, 0, 5, 0.99) 48%,
+          rgba(47, 0, 37, 0.98)
+        );
+        border: 1px solid var(--rv-line);
+        border-radius: 26px;
+        box-shadow:
+          0 24px 60px rgba(0, 0, 0, 0.72),
+          0 0 38px rgba(212, 0, 184, 0.2),
+          inset 0 1px 0 rgba(255, 255, 255, 0.13),
+          inset 0 -15px 30px rgba(0, 0, 0, 0.32);
+      }
+
+      .rv-vault-shell::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 8%;
+        right: 8%;
+        z-index: 4;
+        height: 2px;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          var(--rv-hot),
+          #ffebeb,
+          var(--rv-hot),
+          transparent
+        );
+        filter: drop-shadow(0 0 7px var(--rv-ruby));
+        animation: rvTopPulse 3s ease-in-out infinite;
+      }
+
+      .rv-vault-shell::after {
+        content: "";
+        position: absolute;
+        top: -60%;
+        left: -55%;
+        z-index: 3;
+        width: 32%;
+        height: 220%;
+        pointer-events: none;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(255, 255, 255, 0.04),
+          rgba(255, 255, 255, 0.2),
+          rgba(255, 255, 255, 0.04),
+          transparent
+        );
+        transform: rotate(22deg);
+        animation: rvVaultSweep 7s ease-in-out infinite;
+      }
+
+      .rv-vault-top {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        padding: 13px 15px;
+        background: linear-gradient(
+          145deg,
+          #bb00c1 0%,
+          #900095 52%,
+          #8b0074 100%
+        );
+        border-bottom: 1px solid rgba(241, 82, 255, 0.24);
+        box-shadow: inset 0 -8px 16px rgba(0, 0, 0, 0.24);
+        font-family:
+          Manrope,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Arial,
+          sans-serif;
+        font-size: 9px;
+        font-weight: 800;
+        letter-spacing: 0.35px;
+        text-transform: uppercase;
+      }
+
+      .rv-vault-mark {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        color: #ffffff;
+      }
+
+      .rv-vault-gem {
+        width: 11px;
+        height: 11px;
+        background: linear-gradient(145deg, #b3ffb3, #00aa44);
+        border: 1px solid rgba(207, 255, 207, 0.78);
+        transform: rotate(45deg);
+        box-shadow: 0 0 12px rgba(99, 217, 99, 0.82);
+        animation: rvGemPulse 2.2s ease-in-out infinite;
+      }
+
+      .rv-vault-status {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        color: #fff;
+      }
+
+      .rv-vault-status::before {
+        content: "";
+        width: 7px;
+        height: 7px;
+        background: #58ff61;
+        border-radius: 50%;
+        box-shadow: 0 0 9px rgb(67 220 24 / 90%);
+        animation: rvStatusBlink 1.5s ease-in-out infinite;
+      }
+
+      .rv-vault-body {
+        position: relative;
+        padding: 18px;
+      }
+
+      .rv-brand-lockup {
+        width: 100%;
+        max-width: 215px;
+        margin: 0 auto 10px;
+      }
+
+      .rv-brand-lockup amp-img {
+        filter: drop-shadow(0 0 14px rgba(255, 78, 240, 0.38));
+      }
+
+      .rv-kicker {
+        position: relative;
+        margin: 12px 0 17px;
+        color: #f9f9f9;
+        font-family:
+          Manrope,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Arial,
+          sans-serif;
+        font-size: 10px;
+        font-weight: 800;
+        line-height: 1.6;
+        letter-spacing: 0.35px;
+        text-align: center;
+        text-transform: uppercase;
+        text-shadow: 0 0 10px rgba(255, 49, 238, 0.32);
+      }
+
+      .rv-kicker::before,
+      .rv-kicker::after {
+        content: "◆";
+        display: inline-block;
+        margin: 0 8px;
+        color: var(--rv-hot);
+        font-size: 8px;
+        transform: rotate(45deg);
+      }
+
+      .rv-hero-card {
+        position: relative;
+        padding: 5px;
+        overflow: hidden;
+        background: linear-gradient(
+          145deg,
+          rgba(255, 87, 255, 0.34),
+          rgba(66, 0, 86, 0.35)
+        );
+        border: 1px solid rgba(255, 111, 195, 0.56);
+        border-radius: 18px;
+        box-shadow:
+          0 14px 30px rgba(0, 0, 0, 0.48),
+          0 0 24px rgba(202, 0, 192, 0.22),
+          inset 0 1px 0 rgba(255, 255, 255, 0.16);
+      }
+
+      .rv-hero-card::before,
+      .rv-hero-card::after {
+        content: "";
+        position: absolute;
+        z-index: 2;
+        width: 33px;
+        height: 33px;
+        pointer-events: none;
+      }
+
+      .rv-hero-card::before {
+        top: 9px;
+        left: 9px;
+        border-top: 2px solid var(--rv-hot);
+        border-left: 2px solid var(--rv-hot);
+        border-radius: 7px 0 0;
+      }
+
+      .rv-hero-card::after {
+        right: 9px;
+        bottom: 9px;
+        border-right: 2px solid var(--rv-hot);
+        border-bottom: 2px solid var(--rv-hot);
+        border-radius: 0 0 7px;
+      }
+
+      .rv-hero-media {
+        position: relative;
+        overflow: hidden;
+        border-radius: 13px;
+      }
+
+      .rv-hero-media amp-img {
+        display: block;
+      }
+
+      .rv-hero-scan {
+        position: absolute;
+        top: -20%;
+        left: 0;
+        z-index: 2;
+        width: 100%;
+        height: 18%;
+        pointer-events: none;
+        background: linear-gradient(
+          180deg,
+          transparent,
+          rgba(255, 75, 255, 0.24),
+          rgba(255, 255, 255, 0.16),
+          transparent
+        );
+        filter: blur(1px);
+        animation: rvScanMove 4.2s linear infinite;
+      }
+
+      .rv-feature-strip {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 6px;
+        margin: 12px 0 15px;
+      }
+
+      .rv-feature-chip {
+        position: relative;
+        padding: 8px 3px;
+        color: #ffffff;
+        background: linear-gradient(
+          145deg,
+          rgba(255, 67, 67, 0.1),
+          rgba(56, 0, 9, 0.38)
+        );
+        border: 1px solid rgba(255, 94, 247, 0.2);
+        border-radius: 9px;
+        font-family:
+          Manrope,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Arial,
+          sans-serif;
+        font-size: 8px;
+        font-weight: 700;
+        letter-spacing: 0.1px;
+        text-align: center;
+        text-transform: uppercase;
+      }
+
+      .rv-feature-chip::before {
+        content: "";
+        position: absolute;
+        top: 4px;
+        left: 50%;
+        width: 18px;
+        height: 1px;
+        background: #11ff05;
+        box-shadow: 0 0 5px #45ff01;
+        transform: translateX(-50%);
+      }
+
+      .rv-access-list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .rv-access-btn {
+        position: relative;
+        display: grid;
+        grid-template-columns: 36px 1fr 24px;
+        align-items: center;
+        min-height: 54px;
+        padding: 8px 13px;
+        overflow: hidden;
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        border: 1px solid transparent;
+        border-radius: 13px;
+        box-shadow:
+          inset 0 1px 0 rgba(255, 255, 255, 0.17),
+          inset 0 -8px 15px rgba(0, 0, 0, 0.25),
+          0 8px 17px rgba(0, 0, 0, 0.34);
+        font-family:
+          Manrope,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Arial,
+          sans-serif;
+        font-size: 12px;
+        font-weight: 800;
+        letter-spacing: 0.45px;
+        text-shadow: 0 2px 5px rgba(0, 0, 0, 0.45);
+        transition:
+          filter 0.2s ease,
+          transform 0.2s ease;
+      }
+
+      .rv-access-btn::before {
+        content: "";
+        position: absolute;
+        top: 1px;
+        left: 4%;
+        width: 92%;
+        height: 35%;
+        pointer-events: none;
+        background: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0.2),
+          rgba(255, 255, 255, 0.04),
+          transparent
+        );
+        border-radius: 10px 10px 40% 40%;
+      }
+
+      .rv-access-btn::after {
+        content: "";
+        position: absolute;
+        top: -90%;
+        left: -55%;
+        width: 30%;
+        height: 280%;
+        pointer-events: none;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(255, 255, 255, 0.08),
+          rgba(255, 255, 255, 0.42),
+          rgba(255, 255, 255, 0.08),
+          transparent
+        );
+        transform: rotate(22deg);
+        animation: rvButtonShine 4.8s ease-in-out infinite;
+      }
+
+      .rv-access-login {
+        background: linear-gradient(
+          145deg,
+          #a100c1 0%,
+          #950095 52%,
+          #8b007f 100%
+        );
+        border-color: #ff5252;
+      }
+
+      .rv-access-register {
+        background: linear-gradient(
+          145deg,
+          #a100c1 0%,
+          #950090 52%,
+          #8b007f 100%
+        );
+        border-color: #ff52e8;
+        box-shadow:
+          inset 0 1px 0 rgba(255, 255, 255, 0.22),
+          inset 0 -8px 15px rgba(120, 0, 120, 0.3),
+          0 9px 19px rgba(174, 0, 180, 0.45),
+          0 0 20px rgba(248, 40, 255, 0.4);
+      }
+
+      .rv-access-alt {
+        background: linear-gradient(
+          145deg,
+          #a100c1 0%,
+          #950090 52%,
+          #8b007f 100%
+        );
+        border-color: #ff8080;
+        box-shadow:
+          inset 0 1px 0 rgba(255, 255, 255, 0.22),
+          inset 0 -8px 15px rgba(90, 0, 0, 0.3),
+          0 9px 19px rgba(125, 0, 150, 0.43),
+          0 0 18px rgba(255, 45, 244, 0.35);
+      }
+
+      .rv-btn-index {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        color: #fff;
+        background: rgba(20, 0, 5, 0.3);
+        border: 1px solid rgba(255, 255, 255, 0.24);
+        border-radius: 9px;
+        font-size: 9px;
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12);
+      }
+
+      .rv-btn-label {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+      }
+
+      .rv-btn-arrow {
+        position: relative;
+        z-index: 2;
+        font-family:
+          Inter,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Arial,
+          sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+        text-align: right;
+        transition: transform 0.2s ease;
+      }
+
+      .rv-access-btn:hover {
+        color: #fff;
+        filter: brightness(1.1);
+        transform: translateY(-2px);
+      }
+
+      .rv-access-btn:hover .rv-btn-arrow {
+        transform: translateX(3px);
+      }
+
+      .rv-access-btn:active {
+        transform: scale(0.98);
+      }
+
+      .rv-vault-footer {
+        position: relative;
+        padding: 13px 12px;
+        color: #f0e0e0;
+        background: linear-gradient(
+          145deg,
+          #a100c1 0%,
+          #950090 52%,
+          #8b007f 100%
+        );
+        border-top: 1px solid rgba(241, 82, 255, 0.82);
+        font-family:
+          Inter,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Arial,
+          sans-serif;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 0.25px;
+        text-align: center;
+        text-transform: uppercase;
+      }
+
+      .rv-opening {
+        position: absolute;
+        inset: 0;
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        pointer-events: none;
+        background: #230707;
+        animation: rvOpeningHide 0.7s cubic-bezier(0.22, 1, 0.36, 1) 2.35s
+          forwards;
+      }
+
+      .rv-opening::before,
+      .rv-opening::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 51%;
+        background:
+          radial-gradient(
+            circle at center,
+            rgba(156, 0, 170, 0.75),
+            transparent 55%
+          ),
+          linear-gradient(145deg, #b100b1, #44074c 58%, #080002);
+        box-shadow: inset 0 0 30px rgba(255, 63, 63, 0.12);
+        animation-duration: 0.85s;
+        animation-timing-function: cubic-bezier(0.77, 0, 0.18, 1);
+        animation-delay: 1.75s;
+        animation-fill-mode: forwards;
+      }
+
+      .rv-opening::before {
+        left: 0;
+        border-right: 1px solid rgba(255, 120, 120, 0.75);
+        animation-name: rvPanelLeft;
+      }
+
+      .rv-opening::after {
+        right: 0;
+        border-left: 1px solid rgba(255, 120, 120, 0.75);
+        animation-name: rvPanelRight;
+      }
+
+      .rv-opening-center {
+        position: relative;
+        z-index: 3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .rv-opening-seal {
+        position: relative;
+        width: 72px;
+        height: 72px;
+        margin-bottom: 24px;
+        opacity: 0;
+        transform: rotate(45deg) scale(0.15);
+        background: linear-gradient(
+          145deg,
+          #a100c1 0%,
+          #950090 52%,
+          #8b007f 100%
+        );
+        border: 2px solid #ffb0b0;
+        box-shadow:
+          0 0 0 7px rgba(255, 63, 101, 0.07),
+          0 0 35px rgba(255, 120, 120, 0.75),
+          inset 0 1px 0 rgba(255, 255, 255, 0.35),
+          inset 0 -9px 18px rgba(60, 0, 14, 0.32);
+        animation: rvSealReveal 1.05s cubic-bezier(0.22, 1, 0.36, 1) 0.1s
+          forwards;
+      }
+
+      .rv-opening-seal::before,
+      .rv-opening-seal::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background: #fff;
+        box-shadow: 0 0 9px rgba(255, 255, 255, 0.72);
+        transform: translate(-50%, -50%);
+      }
+
+      .rv-opening-seal::before {
+        width: 28px;
+        height: 3px;
+      }
+
+      .rv-opening-seal::after {
+        width: 3px;
+        height: 28px;
+      }
+
+      .rv-opening-brand {
+        position: relative;
+        overflow: hidden;
+        color: #fff;
+        font-family:
+          Manrope,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Arial,
+          sans-serif;
+        font-size: 25px;
+        font-weight: 800;
+        line-height: 1;
+        letter-spacing: 4px;
+        text-align: center;
+        text-shadow:
+          0 0 17px rgba(255, 120, 120, 0.75),
+          0 4px 14px rgba(0, 0, 0, 0.55);
+        opacity: 0;
+        transform: translateY(18px);
+        animation: rvBrandReveal 0.75s cubic-bezier(0.22, 1, 0.36, 1) 0.7s
+          forwards;
+      }
+
+      .rv-opening-brand::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: -55%;
+        width: 30%;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(255, 255, 255, 0.85),
+          transparent
+        );
+        transform: skewX(-18deg);
+        animation: rvBrandShine 0.75s ease 1.18s forwards;
+      }
+
+      .rv-opening-line {
+        width: 0;
+        height: 2px;
+        margin-top: 15px;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          var(--rv-hot),
+          #fff,
+          var(--rv-hot),
+          transparent
+        );
+        box-shadow: 0 0 11px rgba(255, 120, 120, 0.75);
+        animation: rvLineExpand 0.65s ease 1s forwards;
+      }
+
+      .rv-opening-subtitle {
+        margin-top: 10px;
+        color: #ebd9d9;
+        font-family:
+          Inter,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Arial,
+          sans-serif;
+        font-size: 9px;
+        font-weight: 600;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        opacity: 0;
+        animation: rvSubtitleReveal 0.5s ease 1.2s forwards;
+      }
+
+      @keyframes rvTopPulse {
+        0%,
+        100% {
+          opacity: 0.42;
+          transform: scaleX(0.7);
+        }
+
+        50% {
+          opacity: 1;
+          transform: scaleX(1);
+        }
+      }
+
+      @keyframes rvVaultSweep {
+        0%,
+        28% {
+          left: -55%;
+          opacity: 0;
+        }
+
+        42% {
+          opacity: 0.65;
+        }
+
+        65%,
+        100% {
+          left: 130%;
+          opacity: 0;
+        }
+      }
+
+      @keyframes rvGemPulse {
+        0%,
+        100% {
+          opacity: 0.55;
+          box-shadow: 0 0 8px rgba(255, 120, 120, 0.75);
+        }
+
+        50% {
+          opacity: 1;
+          box-shadow: 0 0 17px rgba(255, 120, 120, 0.75);
+        }
+      }
+
+      @keyframes rvStatusBlink {
+        0%,
+        100% {
+          opacity: 0.45;
+        }
+
+        50% {
+          opacity: 1;
+        }
+      }
+
+      @keyframes rvScanMove {
+        0% {
+          top: -20%;
+          opacity: 0;
+        }
+
+        15% {
+          opacity: 1;
+        }
+
+        75% {
+          opacity: 0.75;
+        }
+
+        100% {
+          top: 115%;
+          opacity: 0;
+        }
+      }
+
+      @keyframes rvButtonShine {
+        0%,
+        35% {
+          left: -55%;
+          opacity: 0;
+        }
+
+        48% {
+          opacity: 0.75;
+        }
+
+        68%,
+        100% {
+          left: 130%;
+          opacity: 0;
+        }
+      }
+
+      @keyframes rvSealReveal {
+        0% {
+          opacity: 0;
+          transform: rotate(45deg) scale(0.15);
+        }
+
+        65% {
+          opacity: 1;
+          transform: rotate(225deg) scale(1.12);
+        }
+
+        100% {
+          opacity: 1;
+          transform: rotate(225deg) scale(1);
+        }
+      }
+
+      @keyframes rvBrandReveal {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+          letter-spacing: 2.8px;
+        }
+      }
+
+      @keyframes rvBrandShine {
+        to {
+          left: 130%;
+        }
+      }
+
+      @keyframes rvLineExpand {
+        to {
+          width: 180px;
+        }
+      }
+
+      @keyframes rvSubtitleReveal {
+        to {
+          opacity: 0.8;
+        }
+      }
+
+      @keyframes rvPanelLeft {
+        to {
+          transform: translateX(-105%);
+        }
+      }
+
+      @keyframes rvPanelRight {
+        to {
+          transform: translateX(105%);
+        }
+      }
+
+      @keyframes rvOpeningHide {
+        to {
+          opacity: 0;
+          visibility: hidden;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="rv-amp-stage">
+      <section class="rv-vault-shell" aria-label="Akses resmi {{brand_name}}">
+        <div class="rv-opening" aria-hidden="true">
+          <div class="rv-opening-center">
+            <div class="rv-opening-seal"></div>
+            <div class="rv-opening-brand">{{brand_name}}</div>
+            <div class="rv-opening-line"></div>
+            <div class="rv-opening-subtitle">SEOMAGANG COMMING</div>
+          </div>
+        </div>
+
+        <header class="rv-vault-top">
+          <div class="rv-vault-mark">
+            <span class="rv-vault-gem"></span>
+            <span>{{brand_name}}</span>
+          </div>
+
+          <div class="rv-vault-status">APK DOWNLOAD</div>
+        </header>
+
+        <div class="rv-vault-body">
+          <div class="rv-brand-lockup">
+            <a href="{{canonical}}"
+              ><amp-img
+                src="{{logo}}"
+                width="300"
+                height="90"
+                layout="responsive"
+                alt="Logo {{brand_name}}"
+              >
+              </amp-img
+            ></a>
+          </div>
+
+          <div class="rv-kicker">
+            {{title}}
+          </div>
+
+          <div class="rv-hero-card">
+            <div class="rv-hero-media">
+              <div class="rv-hero-scan"></div>
+
+              <amp-img
+                src="{{banner}}"
+                width="420"
+                height="420"
+                layout="responsive"
+                alt="{{brand_name}}"
+              >
+              </amp-img>
+            </div>
+          </div>
+
+          <div class="rv-feature-strip">
+            <div class="rv-feature-chip">Slot Online</div>
+            <div class="rv-feature-chip">Live Casino</div>
+            <div class="rv-feature-chip">Togel Online</div>
+          </div>
+
+          <nav class="rv-access-list" aria-label="Menu akses {{brand_name}}">
+            <a
+              href="{{moneysite-link}}"
+              class="rv-access-btn rv-access-login"
+              rel="nofollow noopener"
+            >
+              <span class="rv-btn-index"
+                ><amp-img
+                  src="{{favicon}}"
+                  width="30"
+                  height="30"
+                ></amp-img
+              ></span>
+              <span class="rv-btn-label">LOGIN</span>
+              <span class="rv-btn-arrow">›</span>
+            </a>
+
+            <a
+              href="{{moneysite-link}}"
+              class="rv-access-btn rv-access-register"
+              rel="nofollow noopener"
+            >
+              <span class="rv-btn-index"
+                ><amp-img
+                  src="{{favicon}}"
+                  width="30"
+                  height="30"
+                ></amp-img
+              ></span>
+              <span class="rv-btn-label">DAFTAR</span>
+              <span class="rv-btn-arrow">›</span>
+            </a>
+
+            <a
+              href="{{moneysite-link}}"
+              class="rv-access-btn rv-access-alt"
+              rel="nofollow noopener"
+            >
+              <span class="rv-btn-index"
+                ><amp-img
+                  src="{{favicon}}"
+                  width="30"
+                  height="30"
+                ></amp-img
+              ></span>
+              <span class="rv-btn-label">DOWNLOAD APK 5K</span>
+              <span class="rv-btn-arrow">›</span>
+            </a>
+          </nav>
+        </div>
+
+        <footer class="rv-vault-footer">
+          &copy; 2026 {{brand_name}} SEOMAGANG
+        </footer>
+      </section>
+    </main>
+  </body>
+</html>
